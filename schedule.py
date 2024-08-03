@@ -2,6 +2,9 @@ from bs4 import BeautifulSoup
 import requests
 from googleapiclient.discovery import build
 from google.auth import service_account
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Step 1: Log in and fetch the work schedule
 login_url = 'https://payroll.payworks.ca/loginscreen.asp?LangID=0'
