@@ -9,7 +9,7 @@ load_dotenv()
 # Step 1: Log in and fetch the work schedule
 login_url = 'https://payroll.payworks.ca/loginscreen.asp?LangID=0'
 schedule_url = 'https://payroll.payworks.ca/tom/ess/TimeOffCalendar.aspx?MenuID=348'
-credentials = {'customerid': 'E90086', 'username': '1604', 'password': 'Jym4x8nv!#'}
+credentials = {'customerid': 'E90086', 'username': '1604', 'password': ''}
 
 with requests.Session() as session:
     session.post(login_url, data=credentials)
